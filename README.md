@@ -27,13 +27,6 @@
 ## ejecutar
 ``` docker-compose up -d ```
 
-## ejecutarSeed 
-```
-  http://localhost:3000/api/seed
-    o de forma general
-  {base_url}/api/seed
-```
-
 ## Installation
 
 ```bash
@@ -51,6 +44,13 @@ $ yarn run start:dev
 
 # production mode
 $ yarn run start:prod
+```
+
+## ejecutarSeed 
+```
+  http://localhost:3000/api/seed
+    o de forma general
+  {base_url}/api/seed
 ```
 
 ## Test
