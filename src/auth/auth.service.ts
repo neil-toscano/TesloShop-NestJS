@@ -88,6 +88,14 @@ export class AuthService {
     throw new InternalServerErrorException('please check server logs');
   }
 
+  checkAuthStatus(user: User) {
+    const access_token = this.getJWToken({ id: user.id });
+    return {
+      ...user,
+      access_token,
+    };
+  }
+
   private getJWToken(payload: JwtPayload) {
     const access_token = this.jwtService.sign(payload);
     return access_token;
